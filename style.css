@@ -1,0 +1,1064 @@
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+    --primary: #8b5e34;
+    --secondary: #40722e;
+    --dark: #3d2b1f;
+    --light: #f5efe6;
+    --white: #ffffff;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* =========================================================
+   BOTÕES
+========================================================= */
+
+.btn-whatsapp,
+.btn-menu,
+.btn-order{
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* ====================
+   BOTÃO WHATSAPP
+==================== */
+
+.btn-whatsapp{
+    background-color: var(--secondary);
+    color: var(--white);
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-whatsapp:hover{
+    background-color: #2f5b1f;
+    transform: scale(1.05);
+}
+
+.btn-whatsapp img{
+    width: 22px;
+}
+
+/* ====================
+   BOTÃO MENU
+==================== */
+
+.btn-menu{
+    background-color: var(--primary);
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-menu:hover{
+    background-color: #6f4727;
+    transform: translateY(-3px);
+}
+
+.btn-menu img{
+    width: 22px;
+}
+
+/* ====================
+   BOTÃO ORDER
+==================== */
+
+.btn-order{
+    background-color: transparent;
+    color: var(--dark);
+    border: 2px solid var(--primary);
+}
+
+.btn-order:hover{
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 8%;
+
+    position: relative;
+    z-index: 1000;
+}
+
+#logo_cm img{
+    width: 180px;
+}
+
+#menu_btn{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ====================
+   MENU
+==================== */
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--dark);
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.menu a:hover{
+    color: var(--primary);
+}
+
+/* ====================
+   MENU MOBILE
+==================== */
+
+.menu-mobile{
+    display: none;
+
+    font-size: 32px;
+    color: var(--dark);
+
+    cursor: pointer;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    padding: 80px 8%;
+}
+
+.hero-text,
+.hero-image{
+    width: 50%;
+}
+
+.hero-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.subtitle{
+    color: var(--primary);
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.hero-text h1{
+    font-size: clamp(42px, 6vw, 64px);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-text h2{
+    font-size: 32px;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+/* =========================================================
+   FEITO À MÃO
+========================================================= */
+
+#feito{
+    padding: 100px 8%;
+}
+
+#feito h3{
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 60px;
+}
+
+.cards-feito{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.card{
+    background-color: var(--white);
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card i{
+    font-size: 50px;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+}
+
+.card h4{
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.card p{
+    line-height: 1.7;
+
+    color: #5c4a3d;
+}
+
+/* =========================================================
+   CARDÁPIO
+========================================================= */
+
+.cardapio{
+    padding: 100px 8%;
+}
+
+.titulo-cardapio{
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.titulo-cardapio h5{
+    font-size: 42px;
+
+    color: var(--dark);
+
+    margin-bottom: 10px;
+}
+
+.titulo-cardapio p{
+    color: var(--primary);
+
+    font-size: 18px;
+}
+
+/* ====================
+   PRODUTOS
+==================== */
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.produto{
+    width: 320px;
+
+    background-color: var(--white);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+.produto:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.produto img{
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+.produto h6{
+    font-size: 24px;
+
+    margin: 20px;
+
+    color: var(--dark);
+}
+
+.serve{
+    margin: 0 20px 15px;
+
+    font-size: 14px;
+
+    color: var(--primary);
+
+    font-weight: 600;
+}
+
+.feito{
+    margin: 0 20px 20px;
+
+    line-height: 1.6;
+
+    color: #5c4a3d;
+}
+
+.valor{
+    margin: 0 20px 20px;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: var(--primary);
+}
+
+.produto button{
+    width: calc(100% - 40px);
+
+    margin: 0 20px 20px;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    background-color: var(--secondary);
+
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.produto button:hover{
+    background-color: #2f5b1f;
+}
+
+.produto button img{
+    width: 22px;
+    height: 22px;
+}
+
+/* =========================================================
+   DICAS
+========================================================= */
+
+.dicas{
+    padding: 120px 8%;
+}
+
+.titulo-dicas{
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.titulo-dicas span{
+    color: var(--primary);
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.titulo-dicas h2{
+    font-size: 52px;
+
+    margin-bottom: 20px;
+
+    color: var(--dark);
+}
+
+.titulo-dicas p{
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    line-height: 1.8;
+
+    color: #5c4a3d;
+
+    font-size: 18px;
+}
+
+/* ====================
+   CARDS DICAS
+==================== */
+
+.cards-dicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 60px;
+}
+
+.card-dica{
+    width: 320px;
+
+    background-color: var(--white);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+
+    padding-bottom: 110px;
+}
+
+.card-dica:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.card-dica img{
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+}
+
+/* ====================
+   ÍCONE DICA
+==================== */
+
+.icone-dica{
+    width: 80px;
+    height: 80px;
+
+    background-color: var(--light);
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    transform: translateX(-50%);
+
+    border: 6px solid var(--white);
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.icone-dica i{
+    color: var(--primary);
+
+    font-size: 30px;
+}
+
+/* ====================
+   TEXTO DICAS
+==================== */
+
+.card-dica h3{
+    margin-top: 70px;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    color: var(--dark);
+}
+
+.card-dica p{
+    padding: 20px 30px 10px;
+
+    text-align: center;
+
+    line-height: 1.8;
+
+    color: #5c4a3d;
+}
+
+/* =========================================================
+   HISTÓRIA
+========================================================= */
+
+.historia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 80px;
+
+    padding: 120px 8%;
+}
+
+.historia-image,
+.historia-text{
+    width: 50%;
+}
+
+.historia-image img{
+    width: 100%;
+
+    border-radius: 24px;
+
+    object-fit: cover;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.historia-text h2{
+    color: var(--primary);
+
+    font-size: 18px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.historia-text h3{
+    font-size: 48px;
+
+    color: var(--dark);
+
+    margin-bottom: 30px;
+}
+
+.historia-text p{
+    color: #5c4a3d;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.historia-text button{
+    margin-top: 20px;
+
+    background-color: var(--primary);
+
+    color: var(--white);
+
+    padding: 16px 28px;
+
+    border-radius: 14px;
+}
+
+.historia-text button:hover{
+    background-color: #6f4723;
+
+    transform: translateY(-3px);
+}
+
+.sobre-nos a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.banner-congelados{
+    height: 500px;
+
+    margin-top: 120px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background-image: url("images/prato.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay-banner{
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.60);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+.overlay-banner span{
+    color: #f0d9b5;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.overlay-banner h2{
+    color: var(--white);
+
+    font-size: 56px;
+
+    margin-bottom: 20px;
+}
+
+.overlay-banner p{
+    color: #f5f5f5;
+
+    max-width: 700px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.overlay-banner button{
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 16px 32px;
+    border-radius: 14px;
+    font-weight: 600;
+}
+
+.overlay-banner button:hover{
+    background-color: #2f5b1f;
+
+    transform: scale(1.05);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background-color: #d8c3b1;
+
+    color: var(--dark);
+
+    margin-top: 120px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 80px 8%;
+}
+
+.footer-logo{
+    width: 40%;
+}
+
+.footer-logo img{
+    width: 180px;
+
+    margin-bottom: 20px;
+}
+
+.footer-logo p{
+    line-height: 1.7;
+}
+
+.footer-links h4,
+.footer-contact h4{
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links a{
+    text-decoration: none;
+
+    color: var(--dark);
+
+    line-height: 2;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover{
+    color: var(--white);
+}
+
+.footer-contact i{
+    margin-right: 10px;
+
+    color: var(--dark);
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+.footer-contact i:hover{
+    color: var(--white);
+
+    transform: scale(1.2);
+}
+
+.footer-contact a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-copy{
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================================================
+   ANIMAÇÕES
+========================================================= */
+
+.hidden{
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.show{
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 992px){
+
+    .cards-feito{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image{
+        width: 100%;
+    }
+
+    .historia{
+        flex-direction: column;
+    }
+
+    .historia-image,
+    .historia-text{
+        width: 100%;
+    }
+
+    .historia-text{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+
+    /* ====================
+       NAVBAR
+    ==================== */
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    #menu_btn{
+        position: absolute;
+
+        top: 100%;
+        right: 8%;
+
+        width: 260px;
+
+        background-color: var(--light);
+
+        border-radius: 20px;
+
+        padding: 25px;
+
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-20px);
+
+        transition: 0.3s ease;
+
+        z-index: 999;
+    }
+
+    #menu_btn.active{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* ====================
+       HERO
+    ==================== */
+
+    .hero{
+        padding: 60px 5%;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* ====================
+       FEITO À MÃO
+    ==================== */
+
+    #feito{
+        padding: 80px 5%;
+    }
+
+    #feito h3{
+        font-size: 32px;
+    }
+
+    .cards-feito{
+        grid-template-columns: 1fr;
+    }
+
+    /* ====================
+       CARDÁPIO
+    ==================== */
+
+    .produto{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* ====================
+       DICAS
+    ==================== */
+
+    .dicas{
+        padding: 80px 5%;
+    }
+
+    .titulo-dicas h2{
+        font-size: 38px;
+    }
+
+    .cards-dicas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-dica{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* ====================
+       HISTÓRIA
+    ==================== */
+
+    .historia{
+        padding: 80px 5%;
+    }
+
+    .historia-text h3{
+        font-size: 36px;
+    }
+
+    /* ====================
+       BANNER
+    ==================== */
+
+    .banner-congelados{
+        height: 400px;
+    }
+
+    .overlay-banner h2{
+        font-size: 36px;
+    }
+
+    .overlay-banner p{
+        font-size: 14px;
+    }
+
+    /* ====================
+       FOOTER
+    ==================== */
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo{
+        width: 100%;
+    }
+}
