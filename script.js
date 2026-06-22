@@ -48,3 +48,5 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     });
 });
+
+document.getElementById("ano").textContent = new Date().getFullYear();
